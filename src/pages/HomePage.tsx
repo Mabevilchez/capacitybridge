@@ -42,7 +42,11 @@ function ImageShowcase() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <div className="relative rounded-2xl overflow-hidden group h-64 sm:h-80">
-            <img src="https://images.unsplash.com/photo-1565785759001-90e62e04fa16?w=600&q=80&auto=format&fit=crop" alt="Metal 3D printing machine LPBF" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <img
+              src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&q=80&auto=format&fit=crop"
+              alt="Industrial metal 3D printing machine"
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0F1F3D]/80 to-transparent" />
             <div className="absolute bottom-4 left-4">
               <p className="text-white text-sm font-bold">LPBF / DMLS Machines</p>
@@ -50,7 +54,11 @@ function ImageShowcase() {
             </div>
           </div>
           <div className="relative rounded-2xl overflow-hidden group h-64 sm:h-80">
-            <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=600&q=80&auto=format&fit=crop" alt="Engineer reviewing metal 3D printed parts" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <img
+              src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=600&q=80&auto=format&fit=crop"
+              alt="Engineer reviewing metal 3D printed parts"
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0F1F3D]/80 to-transparent" />
             <div className="absolute bottom-4 left-4">
               <p className="text-white text-sm font-bold">Engineering Review</p>
@@ -58,7 +66,11 @@ function ImageShowcase() {
             </div>
           </div>
           <div className="relative rounded-2xl overflow-hidden group h-64 sm:h-80">
-            <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=600&q=80&auto=format&fit=crop" alt="Quality inspection metal parts" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <img
+              src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=600&q=80&auto=format&fit=crop"
+              alt="Quality inspection of metal parts"
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0F1F3D]/80 to-transparent" />
             <div className="absolute bottom-4 left-4">
               <p className="text-white text-sm font-bold">Quality Inspection</p>
