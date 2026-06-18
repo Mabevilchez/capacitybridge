@@ -1,60 +1,63 @@
 import { createClient } from '@supabase/supabase-js';
 
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || '';
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || '';
+// Fallback values prevent crash when env vars are not set
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || 'https://placeholder.supabase.co';
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || 'placeholder-key';
 
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
+export const isSupabaseConfigured =
+  !!import.meta.env.VITE_SUPABASE_URL && !!import.meta.env.VITE_SUPABASE_ANON_KEY;
+
 // Database types
-export type Lead = {
+export interface Lead {
   id?: string;
   full_name: string;
   email: string;
-  company: string;
+  company?: string;
   role?: string;
   industry?: string;
   country?: string;
-  interest_type: string;
+  interest_type: 'customer' | 'supplier' | 'both' | 'other';
   expected_timing?: string;
   message?: string;
   consent: boolean;
   source?: string;
   created_at?: string;
-};
+}
 
-export type CustomerProject = {
+export interface CustomerProject {
   id?: string;
   project_name: string;
-  part_name: string;
-  project_description?: string;
-  intended_application?: string;
+  part_name?: string;
+  part_description?: string;
+  application?: string;
   industry?: string;
   project_type?: string;
   quantity?: number;
-  technology?: string;
+  delivery_date?: string;
+  delivery_location?: string;
+  technology?: string[];
   material?: string;
   dimensions?: string;
   tolerance?: string;
   surface_finish?: string;
-  post_processing?: string[];
-  certifications?: string[];
-  delivery_date?: string;
-  delivery_location?: string;
-  confidentiality_level: string;
-  nda_requirement?: string;
-  cad_visibility?: string;
+  confidentiality_level: 'standard' | 'restricted' | 'highly_confidential';
+  nda_required?: boolean;
   hide_company_identity?: boolean;
-  hide_project_name?: boolean;
-  additional_confidentiality_notes?: string;
-  customer_name: string;
-  customer_company: string;
-  customer_email: string;
-  customer_phone?: string;
+  full_name: string;
+  company_name?: string;
+  email: string;
+  phone?: string;
+  job_title?: string;
+  website?: string;
+  country?: string;
+  consent: boolean;
   status?: string;
   created_at?: string;
-};
+}
 
-export type Supplier = {
+export interface Supplier {
   id?: string;
   company_name: string;
   contact_name: string;
@@ -64,11 +67,11 @@ export type Supplier = {
   company_description?: string;
   address?: string;
   city?: string;
-  country: string;
-  industries_served?: string[];
+  country?: string;
   years_experience?: number;
-  verification_status?: string;
   nda_capability?: boolean;
   secure_file_process?: boolean;
+  verification_status?: string;
+  consent: boolean;
   created_at?: string;
-};
+}
