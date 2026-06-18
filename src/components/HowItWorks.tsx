@@ -1,4 +1,8 @@
 import { useState } from 'react';
+
+interface HowItWorksProps {
+    onOpenProjectForm?: () => void;
+
 import { Upload, Cpu, BarChart3, Factory, CheckSquare, ArrowRight, Shield } from 'lucide-react';
 
 const STEPS = [
@@ -89,7 +93,7 @@ const STEPS = [
   },
 ];
 
-export default function HowItWorks() {
+export default function HowItWorks({ onOpenProjectForm }: HowItWorksProps) {
   const [activeStep, setActiveStep] = useState(0);
   const step = STEPS[activeStep];
   const Icon = step.icon;
