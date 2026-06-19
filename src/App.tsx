@@ -10,28 +10,28 @@ import AdminDashboard from '@/pages/AdminDashboard';
 import ProjectSubmissionForm from '@/components/ProjectSubmissionForm';
 
 function App() {
-    const [showProjectForm, setShowProjectForm] = useState(false);
+  const [showProjectForm, setShowProjectForm] = useState(false);
 
   return (
-        <Router>
-              <div className="min-h-screen bg-white font-sans antialiased">
-                      <PrototypeBanner />
-                      <Navbar onOpenProjectForm={() => setShowProjectForm(true)} />
-                      <main>
-                                <Routes>
-                                            <Route path="/" element={<HomePage onOpenProjectForm={() => setShowProjectForm(true)} />} />
-                                            <Route path="/for-suppliers" element={<ForSuppliersPage />} />
-                                            <Route path="/admin" element={<AdminDashboard />} />
-                                </Routes>Routes>
-                      </main>main>
-                      <Footer />
-                      <Toaster />
-                {showProjectForm && (
-                    <ProjectSubmissionForm onClose={() => setShowProjectForm(false)} />
-                  )}
-              </div>div>
-        </Router>Router>
-      );
+    <Router>
+      <div className="min-h-screen bg-white font-sans antialiased">
+        <PrototypeBanner />
+        <Navbar onOpenProjectForm={() => setShowProjectForm(true)} />
+        <main>
+          <Routes>
+            <Route path="/" element={<HomePage onOpenProjectForm={() => setShowProjectForm(true)} />} />
+            <Route path="/for-suppliers" element={<ForSuppliersPage />} />
+            <Route path="/admin" element={<AdminDashboard />} />
+          </Routes>
+        </main>
+        <Footer />
+        <Toaster />
+        {showProjectForm && (
+          <ProjectSubmissionForm onClose={() => setShowProjectForm(false)} />
+        )}
+      </div>
+    </Router>
+  );
 }
 
-export default App;</Router>
+export default App;
