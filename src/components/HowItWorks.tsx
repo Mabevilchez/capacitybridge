@@ -1,9 +1,14 @@
 import { useState } from 'react';
+import { Upload, Cpu, BarChart3, Factory, CheckSquare, ArrowRight, Shield } from 'lucide-react';
 
 interface HowItWorksProps {
-    onOpenProjectForm?: () => void;
+  onOpenProjectForm?: () => void;
+}
 
-import { Upload, Cpu, BarChart3, Factory, CheckSquare, ArrowRight, Shield } from 'lucide-react';
+
+interface HowItWorksProps {
+  onOpenProjectForm?: () => void;
+}
 
 const STEPS = [
   {
