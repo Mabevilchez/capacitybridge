@@ -6,99 +6,99 @@ import EarlyAccessSection from '../components/EarlyAccessSection';
 import AcademicContextSection from '../components/AcademicContextSection';
 
 interface HomePageProps {
-    onOpenProjectForm?: () => void;
+  onOpenProjectForm?: () => void;
 }
 
 function StatsBar() {
-    return (
-          <div className="bg-[#0F1F3D] py-6">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-                                  <div>
-                                              <p className="text-white font-bold text-base sm:text-lg">DMLS / SLM / LPBF</p>p>
-                                              <p className="text-blue-300 text-xs mt-0.5">Metal AM technologies</p>p>
-                                  </div>div>
-                                  <div className="border-l border-white/10 pl-6">
-                                              <p className="text-white font-bold text-base sm:text-lg">EBM / DED / MBJ</p>p>
-                                              <p className="text-blue-300 text-xs mt-0.5">Additional processes</p>p>
-                                  </div>div>
-                                  <div className="border-l border-white/10 pl-6">
-                                              <p className="text-white font-bold text-base sm:text-lg">ISO 9001 / AS9100</p>p>
-                                              <p className="text-blue-300 text-xs mt-0.5">Certifications screened</p>p>
-                                  </div>div>
-                                  <div className="border-l border-white/10 pl-6">
-                                              <p className="text-white font-bold text-base sm:text-lg">3-day</p>p>
-                                              <p className="text-blue-300 text-xs mt-0.5">Average matching time</p>p>
-                                  </div>div>
-                        </div>div>
-                </div>div>
-          </div>div>
-        );
+  return (
+    <div className="bg-[#0F1F3D] py-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+          <div>
+            <p className="text-white font-bold text-base sm:text-lg">DMLS / SLM / LPBF</p>
+            <p className="text-blue-300 text-xs mt-0.5">Metal AM technologies</p>
+          </div>
+          <div className="border-l border-white/10 pl-6">
+            <p className="text-white font-bold text-base sm:text-lg">EBM / DED / MBJ</p>
+            <p className="text-blue-300 text-xs mt-0.5">Additional processes</p>
+          </div>
+          <div className="border-l border-white/10 pl-6">
+            <p className="text-white font-bold text-base sm:text-lg">ISO 9001 / AS9100</p>
+            <p className="text-blue-300 text-xs mt-0.5">Certifications screened</p>
+          </div>
+          <div className="border-l border-white/10 pl-6">
+            <p className="text-white font-bold text-base sm:text-lg">3-day</p>
+            <p className="text-blue-300 text-xs mt-0.5">Average matching time</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 function ImageShowcase() {
-    return (
-          <div className="bg-white py-16">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div className="text-center mb-10">
-                                  <span className="text-xs font-bold tracking-widest uppercase text-[#1D4ED8] mb-2 block">Industrial Metal AM</span>span>
-                                  <h2 className="text-3xl font-extrabold text-[#0F172A]">From digital file to certified metal part</h2>h2>
-                        </div>div>
-                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                                  <div className="relative rounded-2xl overflow-hidden group h-64 sm:h-80">
-                                              <img
-                                                              src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&q=80&auto=format&fit=crop"
-                                                              alt="Industrial metal 3D printing machine"
-                                                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                                            />
-                                              <div className="absolute inset-0 bg-gradient-to-t from-[#0F1F3D]/80 to-transparent" />
-                                              <div className="absolute bottom-4 left-4">
-                                                            <p className="text-white text-sm font-bold">LPBF / DMLS Machines</p>p>
-                                                            <p className="text-blue-200 text-xs">Laser powder bed fusion</p>p>
-                                              </div>div>
-                                  </div>div>
-                                  <div className="relative rounded-2xl overflow-hidden group h-64 sm:h-80">
-                                              <img
-                                                              src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=600&q=80&auto=format&fit=crop"
-                                                              alt="Engineer reviewing metal 3D printed parts"
-                                                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                                            />
-                                              <div className="absolute inset-0 bg-gradient-to-t from-[#0F1F3D]/80 to-transparent" />
-                                              <div className="absolute bottom-4 left-4">
-                                                            <p className="text-white text-sm font-bold">Engineering Review</p>p>
-                                                            <p className="text-blue-200 text-xs">Technical part qualification</p>p>
-                                              </div>div>
-                                  </div>div>
-                                  <div className="relative rounded-2xl overflow-hidden group h-64 sm:h-80">
-                                              <img
-                                                              src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=600&q=80&auto=format&fit=crop"
-                                                              alt="Quality inspection of metal parts"
-                                                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                                            />
-                                              <div className="absolute inset-0 bg-gradient-to-t from-[#0F1F3D]/80 to-transparent" />
-                                              <div className="absolute bottom-4 left-4">
-                                                            <p className="text-white text-sm font-bold">Quality Inspection</p>p>
-                                                            <p className="text-blue-200 text-xs">Certified measurement and reporting</p>p>
-                                              </div>div>
-                                  </div>div>
-                        </div>div>
-                        <p className="text-center text-xs text-[#94A3B8] mt-4 italic">Illustrative photography. CapacityBridge connects you with verified suppliers operating equipment of this type.</p>p>
-                </div>div>
-          </div>div>
-        );
+  return (
+    <div className="bg-white py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-10">
+          <span className="text-xs font-bold tracking-widest uppercase text-[#1D4ED8] mb-2 block">Industrial Metal AM</span>
+          <h2 className="text-3xl font-extrabold text-[#0F172A]">From digital file to certified metal part</h2>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="relative rounded-2xl overflow-hidden group h-64 sm:h-80">
+            <img
+              src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&q=80&auto=format&fit=crop"
+              alt="Industrial metal 3D printing machine"
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0F1F3D]/80 to-transparent" />
+            <div className="absolute bottom-4 left-4">
+              <p className="text-white text-sm font-bold">LPBF / DMLS Machines</p>
+              <p className="text-blue-200 text-xs">Laser powder bed fusion</p>
+            </div>
+          </div>
+          <div className="relative rounded-2xl overflow-hidden group h-64 sm:h-80">
+            <img
+              src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=600&q=80&auto=format&fit=crop"
+              alt="Engineer reviewing metal 3D printed parts"
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0F1F3D]/80 to-transparent" />
+            <div className="absolute bottom-4 left-4">
+              <p className="text-white text-sm font-bold">Engineering Review</p>
+              <p className="text-blue-200 text-xs">Technical part qualification</p>
+            </div>
+          </div>
+          <div className="relative rounded-2xl overflow-hidden group h-64 sm:h-80">
+            <img
+              src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=600&q=80&auto=format&fit=crop"
+              alt="Quality inspection of metal parts"
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0F1F3D]/80 to-transparent" />
+            <div className="absolute bottom-4 left-4">
+              <p className="text-white text-sm font-bold">Quality Inspection</p>
+              <p className="text-blue-200 text-xs">Certified measurement and reporting</p>
+            </div>
+          </div>
+        </div>
+        <p className="text-center text-xs text-[#94A3B8] mt-4 italic">Illustrative photography. CapacityBridge connects you with verified suppliers operating equipment of this type.</p>
+      </div>
+    </div>
+  );
 }
 
 export default function HomePage({ onOpenProjectForm }: HomePageProps) {
-    return (
-          <>
-                <HeroSection onOpenProjectForm={onOpenProjectForm} />
-                <StatsBar />
-                <HowItWorks onOpenProjectForm={onOpenProjectForm} />
-                <ImageShowcase />
-                <CustomerBenefits onOpenProjectForm={onOpenProjectForm} />
-                <IPSecuritySection />
-                <EarlyAccessSection />
-                <AcademicContextSection />
-          </>>
-        );
-}</></div>
+  return (
+    <>
+      <HeroSection onOpenProjectForm={onOpenProjectForm} />
+      <StatsBar />
+      <HowItWorks onOpenProjectForm={onOpenProjectForm} />
+      <ImageShowcase />
+      <CustomerBenefits onOpenProjectForm={onOpenProjectForm} />
+      <IPSecuritySection />
+      <EarlyAccessSection />
+      <AcademicContextSection />
+    </>
+  );
+}
